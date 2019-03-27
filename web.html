@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--[if IE]>这段文字只在ie下生效<![endif] -->
+    <!--[if !IE]>这段文字在非IE浏览器下生效<![endif]-->
+    <iframe src="http://localhost:8080/cboard/starter.html"></iframe>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        document.cookie = "name=ymx";
+        function clickbtn(){
+            window.open("./web2.html","top")
+        }
+        $.ajax({
+            type: "options",
+             //url: "./web2.html",
+             url:"http://localhost:9000/test",
+             //data: {username:1, content:2},
+             //url:"http://wthrcdn.etouch.cn/weather_mini?citykey=101010100",
+             dataType: "json",
+            // xhrFields: {withCredentials: true},
+            // crossDomain: true,
+             success:function(data){
+                 console.log(data)
+             },
+             error:function(e){
+                 console.log(e)
+             }
+        })    
+    </script>
+</body>
+</html>
