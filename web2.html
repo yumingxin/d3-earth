@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
-<body>
-    <input type="file" id="ipt" onchange="change1()"></input>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script>
-        //  $("#ipt").change(function(){
-        //      alert(1)
-        //  })
-        function change1(){
-            alert(1)
+    <style>
+        body{
+            background-color: aquamarine;
         }
-    </script>
+        .text-gradient {
+            display: inline-block;
+            color: blue;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            -webkit-text-stroke: 1px #fff;  
+            background-image: -webkit-gradient(linear, 0 0, 10 bottom, from(rgba(34, 72, 121, 1)), to(rgba(145, 196, 231, 1)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="text-gradient" >一站式信息窗管理系统</h1> -->
+    <iframe src="http://localhost:8080/cboard/bi.html#/dashboard/%E6%80%BB%E4%BD%93%E9%83%A8/22" width="100%" height="800px"></iframe>
 </body>
+
 </html>
